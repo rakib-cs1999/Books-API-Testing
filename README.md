@@ -73,7 +73,7 @@ The request body needs to be empty.
 
 ## API Authentication ##
 
-To submit or view an order, need to register an API client.
+To submit or view an order, you need to register an API client.
 
 POST `/api-clients/`
 
@@ -86,11 +86,11 @@ The request body needs to be in JSON format and include the following properties
 
  ```
  {
-    "clientName": "valentin",
+    "clientName": "Postman",
     "clientEmail": "valentin@example.com"
 }
  ```
+The response body will contain the access token. The access token is valid for 7 days.
 
-**Possible errors**
 
-Status code 409 - "API client already registered." Try changing the values for `clientEmail` and `clientName` to something else.
+Theesponse
