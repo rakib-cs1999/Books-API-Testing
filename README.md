@@ -92,5 +92,21 @@ The request body needs to be in JSON format and include the following properties
  ```
 The response body will contain the access token. The access token is valid for 7 days.
 
+### Generate html report
+
+Install newman
+--------------
+npm install -g newman
+
+Generate html report
+--------------------
+newman run "collection name.json" -r htmlextra --reporter-htmlextra-export "example.html"
+
+Change browser title, report title with newman
+---------------------------------------------------------------------------------
+newman run "collection name.json" -r htmlextra --reporter-htmlextra-export "example.html" --reporter-htmlextra-title "report title" --reporter-htmlextra-browserTitle "browser title"
+
+
+
 
 Theesponse
